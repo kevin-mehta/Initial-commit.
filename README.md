@@ -1,12 +1,19 @@
+# ng8-obs-data-exchange-using-service-i
+
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/ng8-obs-data-exchange-using-service-i)
+
 ---
+
 title: Home
 layout: home
 nav_order: 1
 description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
 permalink: /
+
 ---
 
 # Focus on writing good documentation
+
 {: .fs-9 }
 
 Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
@@ -18,11 +25,12 @@ Just the Docs gives your documentation a jumpstart with a responsive Jekyll them
 ---
 
 {: .warning }
+
 > This website documents the features of the current `main` branch of the Just the Docs theme. See [the CHANGELOG]({% link CHANGELOG.md %}) for a list of releases, new features, and bug fixes.
 
 Just the Docs is a theme for generating static websites with [Jekyll]. You can write source files for your web pages using [Markdown], the [Liquid] templating language, and HTML.[^1] Jekyll builds your site by converting all files that have [front matter] to HTML. Your [Jekyll configuration] file determines which theme to use, and sets general parameters for your site, such as the URL of its home page.
 
-Jekyll builds this Just the Docs theme docs website using the theme itself. These web pages show how your web pages will look *by default* when you use this theme. But you can easily *[customize]* the theme to make them look completely different!
+Jekyll builds this Just the Docs theme docs website using the theme itself. These web pages show how your web pages will look _by default_ when you use this theme. But you can easily _[customize]_ the theme to make them look completely different!
 
 Browse the docs to learn more about how to use this theme.
 
@@ -31,11 +39,11 @@ Browse the docs to learn more about how to use this theme.
 The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
 
 {: .note }
-To use the theme, you do ***not*** need to clone or fork the [Just the Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs.
+To use the theme, you do **_not_** need to clone or fork the [Just the Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs.
 
 You can easily set the site created by the template to be published on [GitHub Pages] – the [template README] file explains how to do that, along with other details.
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^2] And you will be able to deploy your local build to a different platform than GitHub Pages.
+If [Jekyll] is installed on your computer, you can also build and preview the created site _locally_. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^2] And you will be able to deploy your local build to a different platform than GitHub Pages.
 
 More specifically, the created site:
 
@@ -76,10 +84,9 @@ Just the Docs is committed to fostering a welcoming community.
 
 [View our Code of Conduct](https://github.com/just-the-docs/just-the-docs/tree/main/CODE_OF_CONDUCT.md) on our GitHub repository.
 
-----
+---
 
 [^1]: The [source file for this page] uses all three markup languages.
-
 [^2]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
 
 [Jekyll]: https://jekyllrb.com
@@ -95,5 +102,6 @@ Just the Docs is committed to fostering a welcoming community.
 [GitHub Pages]: https://pages.github.com/
 [Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
 [GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
+
 [customize]: {% link docs/customization.md %}
 [use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
