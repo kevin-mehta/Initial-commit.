@@ -80,45 +80,135 @@ Let’s dive in and start this exciting journey toward becoming a **skilled Reac
 
 # The Ultimate React Course 2025
 ## Section 1: Welcome, Welcome, Welcome!
-### Lecture 2: Building Our First React App!
+# Lecture 2: Building Our First React App
 
 ---
 
-### **Overview**
-- Build the first small React app **before setting up local environment**.  
-- Introduces key React concepts: **Components, JSX, State, Props, useEffect**.  
-- Use **CodeSandbox** for quick setup and live preview.
+## Adding Functionality – Fetching Data
+- Inside `App()`, create an **async function** `getAdvice()`.
+- Fetch data from API: `https://api.adviceslip.com/advice`
+- Log response to console initially for testing.
+- Attach function to button using `onClick`:
 
----
-
-### **Setting Up in CodeSandbox**
-- Open [codesandbox.io](https://codesandbox.io) or type `react.new` in browser.  
-- Features:  
-  - **Left**: File Explorer  
-  - **Middle**: Code Editor  
-  - **Right**: Live Output & Console  
+```html
+<button onClick={getAdvice}>Get advice</button>
+```
 
 **Screenshot Placeholder:**  
-![CodeSandbox Setup](path_to_screenshot_1.png)  
-
-- Starter template includes: `index.js`, `app.js`, default folders/files.  
+![Button Click Fetch](path_to_screenshot.png)
 
 ---
 
-### **Creating the First Component**
-- A **React Component** = JS function returning JSX.  
-- JSX = HTML-like syntax embedded in JavaScript.  
+## Introducing State
+- Use `useState()` to store dynamic data:
 
 ```javascript
-function App() {
-  return (
-    <div>
-      <h1>Hello World!</h1>
-      <button>Get advice</button>
-    </div>
-  );
+const [advice, setAdvice] = useState('');
+const [count, setCount] = useState(0);
+```
+
+- Update state when fetching advice:
+  - `setAdvice(data.slip.advice)` → Updates advice text  
+  - `setCount(prev => prev + 1)` → Increments count  
+
+**State Flow Diagram Placeholder:**  
+![State Flow](path_to_screenshot.png)
+
+---
+
+## Displaying Dynamic Data
+- Embed JS variables in JSX using `{}`:
+
+```javascript
+<h1>{advice}</h1>
+<p>You have read {count} pieces of advice.</p>
+```
+
+**Screenshot Placeholder:**  
+![Dynamic Data Display](path_to_screenshot.png)
+
+---
+
+## useEffect – Fetch Advice on Load
+- `useEffect()` runs **side effects after render**.
+- Fetch advice automatically when app loads:
+
+```javascript
+useEffect(() => {
+  getAdvice();
+}, []);
+```
+
+- Empty array `[]` ensures effect runs **only once** on initial load.
+
+**Diagram Placeholder:**  
+![useEffect Flow](path_to_screenshot.png)
+
+---
+
+## Creating a Message Component
+- Split UI into **reusable components**.
+- `Message` component shows count of advice read:
+
+```javascript
+function Message(props) {
+  return <p>You have read <strong>{props.count}</strong> pieces of advice.</p>;
 }
-export default App;
+```
+
+- Use **props** to pass count from `App`:
+
+```javascript
+<Message count={count} />
+```
+
+**Component Hierarchy Diagram Placeholder:**  
+![Props Flow](path_to_screenshot.png)
+
+---
+
+## Key Concepts Introduced
+- **Components** – Functions returning JSX, building blocks of UI.  
+- **JSX** – HTML-like syntax embedded in JavaScript.  
+- **State** – React's mechanism for dynamic data that updates the UI.  
+- **Props** – Pass data between components.  
+- **useEffect** – Handle side effects like data fetching.  
+
+---
+
+## Advanced Details Covered
+- Button triggers `getAdvice()` → fetch API → update state → re-render UI.  
+- Multiple states: `advice` for text, `count` for number of advices.  
+- Initial fetch handled with `useEffect()` for better UX.  
+- Split UI into **App** and **Message** components for modularity.  
+
+---
+
+## Summary
+- Built a fully functional small React app.  
+- Learned **Components, JSX, State, Props, useEffect**.  
+- Practiced **fetching API data and updating UI dynamically**.  
+- Modularized code with multiple components.  
+- Used **CodeSandbox workflow** for rapid development.  
+
+---
+
+## Screenshots / Visual Aids
+- CodeSandbox Setup  
+- Component Structure  
+- Button Click → Fetch Data  
+- State Flow  
+- Dynamic Data Display  
+- useEffect Flow  
+- Props Flow  
+
+*(Replace placeholders with actual screenshots/diagrams later.)*
+
+
+
+
+
+
 
 # ng8-obs-data-exchange-using-service-i
 
