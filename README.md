@@ -78,6 +78,47 @@ By the end of this course, you’ll:
 ### 🎵 Outro
 Let’s dive in and start this exciting journey toward becoming a **skilled React developer**!
 
+# The Ultimate React Course 2025
+## Section 1: Welcome, Welcome, Welcome!
+### Lecture 2: Building Our First React App!
+
+---
+
+### **Overview**
+- Build the first small React app **before setting up local environment**.  
+- Introduces key React concepts: **Components, JSX, State, Props, useEffect**.  
+- Use **CodeSandbox** for quick setup and live preview.
+
+---
+
+### **Setting Up in CodeSandbox**
+- Open [codesandbox.io](https://codesandbox.io) or type `react.new` in browser.  
+- Features:  
+  - **Left**: File Explorer  
+  - **Middle**: Code Editor  
+  - **Right**: Live Output & Console  
+
+**Screenshot Placeholder:**  
+![CodeSandbox Setup](path_to_screenshot_1.png)  
+
+- Starter template includes: `index.js`, `app.js`, default folders/files.  
+
+---
+
+### **Creating the First Component**
+- A **React Component** = JS function returning JSX.  
+- JSX = HTML-like syntax embedded in JavaScript.  
+
+```javascript
+function App() {
+  return (
+    <div>
+      <h1>Hello World!</h1>
+      <button>Get advice</button>
+    </div>
+  );
+}
+export default App;
 
 # ng8-obs-data-exchange-using-service-i
 
